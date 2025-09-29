@@ -52,7 +52,7 @@ jobs:
 
       - name: Deploy to EC2
         env:
-          IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/1st-project:latest
+          IMAGE: vidyasagar084/1st-project:latest
           HOST_PORT: ${{ secrets.HOST_PORT }}
           CONTAINER_PORT: ${{ secrets.CONTAINER_PORT }}
           EC2_USER: ${{ secrets.EC2_USER }}
