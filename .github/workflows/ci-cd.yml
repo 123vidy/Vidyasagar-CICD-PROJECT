@@ -60,7 +60,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ${EC2_USER}@${EC2_HOST} <<'EOF'
             set -e
-            IMAGE="${IMAGE}"
+            IMAGE=vidyasagar084/1st-project:latest
             CONTAINER_NAME="demo-app"
             HOST_PORT=${HOST_PORT:-80}
             CONTAINER_PORT=${CONTAINER_PORT:-3000}
